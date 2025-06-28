@@ -1,7 +1,13 @@
 /* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom, #fefdf9, #f9f6f2);
+  background: linear-gradient(to bottom, #fdfaf6, #f5f2eb);
   color: #333;
   transition: background 0.4s ease, color 0.4s ease;
 }
@@ -9,7 +15,6 @@ body {
 header {
   text-align: center;
   padding: 4rem 1rem;
-  background: radial-gradient(circle, #f0e6f6, #fff0e4);
 }
 
 header h1 {
@@ -20,16 +25,7 @@ header h1 {
 header p {
   font-size: 1.2rem;
   color: #555;
-  margin-bottom: 1rem;
-}
-
-#darkToggle {
-  padding: 0.5rem 1rem;
-  background: #eee;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 .content {
@@ -45,6 +41,7 @@ header p {
   margin-bottom: 2rem;
 }
 
+/* Project Grid */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -91,30 +88,5 @@ footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
-  color: #aaa;
-}
-
-/* Dark Mode */
-body.dark {
-  background: #1a1a1a;
-  color: #eee;
-}
-
-body.dark header {
-  background: #2b2b2b;
-}
-
-body.dark .project-card {
-  background: #2c2c2c;
-  color: #eee;
-  border-color: #444;
-}
-
-body.dark footer {
-  color: #666;
-}
-
-body.dark #darkToggle {
-  background: #444;
-  color: #fff;
+  color: #888;
 }
